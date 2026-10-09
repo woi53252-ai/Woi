@@ -60,7 +60,7 @@ export default function AuthPage() {
             <label className="block text-sm font-semibold text-[#5e5148]">비밀번호<Input className="mt-2" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="6자 이상" minLength={6} autoComplete={mode === 'login' ? 'current-password' : 'new-password'} /></label>
             {error && <p className="rounded-2xl bg-[#fff0ef] px-4 py-3 text-sm text-[#b53a32]">{error}</p>}
             {message && <p className="rounded-2xl bg-[#edf8f1] px-4 py-3 text-sm text-[#2d7146]">{message}</p>}
-            <Button className="w-full" disabled={loading}>{loading ? '처리 중…' : mode === 'login' ? '로그인' : '가족 계정 만들기'}</Button>
+            <Button className="w-full" disabled={loading}>{loading ? '처리 중…' : mode === 'login' ? '로그인' : '유미슐랭 계정 만들기'}</Button>
           </form>
 
           {mode === 'signup' && <div className="mt-5 rounded-2xl bg-[#fff6ee] px-4 py-3 text-xs leading-5 text-[#76675d]">보안을 위해 신규 가입자는 바로 유미슐랭 데이터에 접근할 수 없고, 기존 유미슐랭 계정이 승인해야 합니다.</div>}

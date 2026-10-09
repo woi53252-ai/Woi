@@ -11,7 +11,7 @@ export default function PendingApproval({ profile }: { profile: Profile }) {
         <p className="mt-3 text-sm leading-6 text-[#7e7067]">{profile.display_name}님 계정은 만들어졌지만 아직 유미슐랭 구성원 승인이 완료되지 않았습니다.</p>
         <div className="mt-5 rounded-2xl bg-[#fff6ee] p-4 text-left text-sm text-[#6e5e54]">
           <div><b>이메일</b> {profile.email ?? '-'}</div>
-          <p className="mt-3 text-xs leading-5">기존 가족 계정에서 Supabase SQL Editor로 해당 프로필의 <code>approved = true</code>를 설정하면 됩니다.</p>
+          <p className="mt-3 text-xs leading-5">기존 유미슐랭 계정에서 Supabase SQL Editor로 해당 프로필의 <code>approved = true</code>를 설정하면 됩니다.</p>
         </div>
         <Button variant="ghost" className="mt-5 w-full" onClick={() => supabase.auth.signOut()}>로그아웃</Button>
       </div>
